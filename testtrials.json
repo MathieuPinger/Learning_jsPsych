@@ -1,0 +1,27 @@
+[{
+    "id": 1,
+    "immediate": 1,
+    "delayed": 2,
+    "delay": "2 Wochen"
+},
+{
+    "id": 2,
+    "immediate": 1.50,
+    "delayed": 2.50,
+    "delay": "4 Wochen"
+},{
+    "id": 3,
+    "immediate": 1,
+    "delayed": 4,
+    "delay": "1 Jahr"
+},{
+    "id": 4,
+    "immediate": 5,
+    "delayed": 10,
+    "delay": "1 Woche"
+},{
+    "id": 5,
+    "immediate": 2,
+    "delayed": 2.50,
+    "delay": "2 Wochen"
+}]

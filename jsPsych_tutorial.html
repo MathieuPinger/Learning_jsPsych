@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jspsych/jspsych.js"></script>
+    <script src="jspsych/plugins/jspsych-html-keyboard-response.js"></script>
+    <link href="jspsych/css/jspsych.css" rel="stylesheet">
+</head>
+<body>
+
+    <script>
+        // JsPsych trials as object literals
+        // load plugins for objects
+        var welcome_trial = {
+            type: 'html-keyboard-response',
+            stimulus: 'Welcome to my experiment.'
+        };
+
+        // init always needed
+        // timeline specifies the order of executed code
+        jsPsych.init({
+            timeline: [welcome_trial],
+            on_finish: function(){
+                jsPsych.data.displayData();
+            }
+        });
+
+    </script>
+    
+</body>
+</html>
