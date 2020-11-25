@@ -7,7 +7,9 @@ function loadTrials(){
     console.log(xhr);
     
     xhr.onload = function(){
+        console.log(this.status == 200);
         if(this.status == 200){
+            
             var trial_data = JSON.parse(this.responseText);
             //console.log(trial_data);
 
