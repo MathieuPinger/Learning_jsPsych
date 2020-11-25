@@ -34,14 +34,24 @@ let timeline = [];
 let trial = {
     type: "html-keyboard-response",
     stimulus:
-    "<div class = centerbox id='container'>" +
-    "<p class = center-block-text>Please select the option that you would prefer pressing <strong>'q'</strong> for left <strong>'p'</strong> for right:</p><div class='table'>" +
-    "<div class='row'><div id = 'option'><center><font color='green'>" +
-    "1€" +
-    "<br>" + "now" +
-    "</font></center></div>" +
-    "<div id = 'option'><center><font color='green'>" + "2€" +
-    "<br>in 2 weeks" + "</font></center></div></div></div></div>",
+    `<div class = centerbox id='container'>
+    <p class = center-block-text>
+        Please select the option that you would prefer pressing
+        <strong>'q'</strong> for left
+        <strong>'p'</strong> for right:
+    </p>
+    <div class='table'>
+    <div class='row'>
+    <div id = 'option'><center><font color='green'>
+        1€
+    <br>
+        now
+    </font></center></div>
+    <div id = 'option'><center><font color='green'>
+        1€
+    <br>
+        in 2 weeks
+    </font></center></div></div></div></div>`,
     choices: ['q', 'p'],
     stimulus_duration: 2000,
     trial_duration: 2000
