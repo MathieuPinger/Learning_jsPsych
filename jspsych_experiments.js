@@ -28,12 +28,12 @@ trialList = [{
 }];
 
 // initialize timeline
+const trialTimeline = [];
 const timeline = [];
 
 // add trials to timeline: loop through trialList
 trialList.map(trial => {
     let trialData = {
-        type: "html-keyboard-response",
         stimulus:
         `<div class = centerbox id='container'>
         <p class = center-block-text>
@@ -53,13 +53,21 @@ trialList.map(trial => {
         <br>
             in ${trial.delay}
         </font></center></div></div></div></div>`,
-        choices: ['q', 'p'],
-        stimulus_duration: 2000,
-        trial_duration: 2000
+
     }
-    timeline.push(trialData)
+    trialTimeline.push(trialData)
 });
 
+
+let testBlock = {
+    type: "html-keyboard-response",
+    timeline: trialTimeline,
+    choices: ['q', 'p'],
+    stimulus_duration: 2000,
+    trial_duration: 2000,
+
+}
+timeline.push(testBlock)
 
 
 /* needed:
